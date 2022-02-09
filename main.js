@@ -1,3 +1,5 @@
+
+  
 const Storage = {
   get() {
     return JSON.parse(localStorage.getItem('perda-revs:calc')) || {} //pegar
@@ -89,6 +91,8 @@ function adicionaEventos(elementoRecebidoPeloArgumentoDaFuncao) {
   }
   armazenar() //escrevendo no input o valor = popular
 
+
+
   elementoRecebidoPeloArgumentoDaFuncao
     .querySelector('.adicionar')
     .addEventListener('click', () => {
@@ -97,6 +101,8 @@ function adicionaEventos(elementoRecebidoPeloArgumentoDaFuncao) {
       card.after(newCard)
       adicionaEventos(newCard)
     })
+
+  
 }
 
 adicionaEventos(document)

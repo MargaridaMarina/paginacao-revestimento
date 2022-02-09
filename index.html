@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cálculo de perda de revestimento</title>
     <link rel="stylesheet" href="style.css" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6513986143133279"
-     crossorigin="anonymous"></script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6513986143133279"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="titulo">
@@ -14,70 +17,95 @@
         Calcule a perda do seu revestimento para compra
       </p>
     </header>
+    <!-- <div class="add">
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6513986143133279"
+          crossorigin="anonymous"
+        ></script>
+        <ins
+          class="adsbygoogle"
+          style="display: block; background-color: rgb(200,200,200);"
+          data-ad-client="ca-pub-6513986143133279"
+          data-adtest="on"
+          data-ad-slot="3767182592"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+        <script>
+          ;(adsbygoogle = window.adsbygoogle || []).push({})
+        </script>
+    </div> -->
     <main class="principal">
+      <p class="aviso">Evite dores de cabeça no seu projeto de arquitetura ou decoração com a falta de revestimentos na hora do assentamento, compre a quantidade total já com as perdas de paginação, transporte e manuseio.</p>
+      
       <section class="card">
         <form class="form">
-          <label for="nome-a" class="input-text">Nome do ambiente:</label>
-          <input type="text" id="nome-a" class="input-padrao" />
-
+          <label for="nome-a" class="input-text">Identificação da parede:</label>
+          <input type="text" id="nome-a" class="input-padrao" placeholder="Banheiro parede 01"/>
           <label for="comp-a" class="input-text"
-            >Comprimento do ambiente:</label
+            >Comprimento da parede (m):</label
           >
           <input
             type="number"
             id="comp-a"
             class="input-padrao"
-            placeholder="m"
+            placeholder="3,00"
           />
 
-          <label for="larg-a" class="input-text">Largura do ambiente:</label>
+          <label for="larg-a" class="input-text">Largura da parede (m):</label>
           <input
             type="number"
             id="larg-a"
             class="input-padrao"
-            placeholder="m"
+            placeholder="2,00"
           />
 
-          <label for="comp-r" class="input-text">Comprimento do revestimento:</label
+          <label for="comp-r" class="input-text"
+            >Comprimento do revestimento (m):</label
           >
           <input
             type="number"
             id="comp-r"
             class="input-padrao"
-            placeholder="m"
+            placeholder="0,60"
           />
 
           <label for="larg-r" class="input-text"
-            >Largura do revestimento:</label
+            >Largura do revestimento (m):</label
           >
           <input
             type="number"
             id="larg-r"
             class="input-padrao"
-            placeholder="m"
+            placeholder="0,60"
           />
 
-          <label for="perda-extra" class="input-text">Perda extra:</label>
+          <label for="perda-extra" class="input-text">Perda extra (3 a 10%):</label>
           <input
             type="number"
             id="perda-extra"
             class="input-padrao"
-            placeholder="%"
+            placeholder="5"
           />
         </form>
         <button class="button">Calcular</button>
         <div class="resultado-texto" id="ar">
-          Área real: <span id="area-real"></span>
+          Área real: <span id="area-real"></span> m2
         </div>
         <div class="resultado-texto">
-          Área para compra: <span id="area-compra"></span>
+          Área para compra: <span id="area-compra"></span> m2
         </div>
         <div class="resultado-texto">
           Perda total calculada: <span id="perda-calculada"></span>
         </div>
         <h3>
-          <span>Adicionar ambiente</span>
-          <img src="./plus.svg" alt="Imagem de entradas" class="adicionar" />
+          <span>Adicionar parede</span>
+          <img src="./assets/plus.svg" alt="Imagem de entradas" class="adicionar" />
+        </h3>
+        <h3>
+          <span>Remover parede</span>
+          <img src="./assets/minus.svg" alt="Imagem de saídas" class="remover" />
         </h3>
       </section>
     </main>
